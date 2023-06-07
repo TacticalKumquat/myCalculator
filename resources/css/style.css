@@ -1,0 +1,60 @@
+h1 {
+text-align: center;
+}
+
+#calculator {
+display: flex;
+flex-direction: column;
+width: 420px;
+height:525px;
+margin: auto;
+background-color: darkblue;
+border: solid 5px #000;
+}
+
+#screen {
+background-color: blue;
+height: 75px;
+width: 95%;
+margin: 25px auto;
+font-size: 2rem;
+display: flex;
+justify-content: flex-end;
+align-items: center;
+}
+
+#controls {
+display: flex;
+flex-direction: row;
+cursor: pointer;
+}
+
+#numbers {
+display: flex;
+flex-wrap: wrap;
+width:315px;
+}
+
+.number, .operator, .clear {
+width: 90px;
+height: 90px;
+margin: 7.5px;
+display: flex;
+justify-content: center;
+align-items:center;
+font-size: 2rem;
+font-weight: bold;
+box-shadow: 4px 4px #888888;
+}
+
+.number, .operator {
+background-color: #add8e6;
+}
+#equals, .clear {
+background-color: #316a7c;
+}
+
+
+.number:active, .operator:active, .clear:active {
+box-shadow: 0px 0px;
+}
